@@ -1,0 +1,25 @@
+h2 {
+    color: palevioletred;
+    text-align: center;
+}
+
+p {
+    color: darkred;
+}
+
+header p span {
+    color: purple; 
+}
+
+.color {
+    background-color: pink;
+}
+
+h1 {
+    color: hotpink;
+    text-align: center;
+}
+
+aside {
+    color: seagreen;
+}

@@ -1,0 +1,349 @@
+html {
+    background-color:rgb(255, 255, 255);
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 110%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    max-width: 940px;
+    margin-left: auto;  
+    margin-right: auto;
+    background-color:rgb(243, 179, 179);
+    background-image: url(../images/plaid.jpg);
+    background-repeat: repeat-x;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/* Media Query */
+@media screen and (max-width:480px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* Media Query */
+
+.box {
+    background-image: url(../images/pink.avif)
+}
+
+/* Form Styles */
+form {
+    background-color: rgb(228, 127, 127);
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+input[type="email"], input[type="password"] {
+width: 100%;
+display: block;
+box-sizing: border-box;
+padding: 0 10px;
+height: 40px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 100%;
+margin-bottom: 20px;
+border: 1px solid #cdcdcd;
+}
+input {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border: 1px rgb(192, 55, 73);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(192, 55, 73);
+    color: white;
+    padding: 10px 0;
+    border: 1px solid rgb(247, 100, 100);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px solid #cdcdcd;
+    background-color: rgb(247, 100, 100);
+}
+/* End Form Styles */
+
+
+/* Table Styles */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+    background-color:rgb(136, 10, 10);
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+}
+
+table th, table td {
+    border: 1px solid rgb(136, 10, 10);
+}
+
+table tbody tr:nth-child(even) td {
+    background-color:bisque;
+}
+
+table th:nth-child(2), table th:nth-child(3),
+table td:nth-child(2), table td:nth-child(3) {
+    text-align: center;
+}
+
+.col-fave {
+    width: 60%;
+}
+ .col-P, .col-Q {
+    width: 20;
+ }
+/* End Table Styles */
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:rgb(192, 55, 73);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0;
+}
+
+.content-area {
+ 
+    border-top: 3px solid rgb(228, 127, 127); 
+    border-bottom: 3px solid rgb(228, 127, 127); 
+}
+
+.main {
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.support {
+    position: relative;
+    width: 30%;
+    float: left;
+    background-color:rgb(228, 127, 127);
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+.fix {
+    clear: both;
+}
+
+/* Media Query*/
+@media screen and (max-width: 700px) {
+    .main,
+    .support {
+        width: auto;
+        float: none;
+    }
+
+    .main {
+        padding-right: 0;
+    }
+}
+
+/* Media Query*/
+
+/*Slideshow*/
+.image-banner {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.image-banner img {
+    display: block;
+}
+
+.cycle-slideshow {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+
+} 
+.slide {
+    width: 70%;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    background-color:rgb(228, 127, 127);
+    color:black;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.slide-text h3 {
+    margin: 0;
+}
+/*End of slideshow*/
+
+p {
+    color:crimson;
+}
+
+footer p {
+    color:crimson;
+    text-align: center;
+    font-size: 85%;
+    color:crimson;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color:rgb(231, 130, 130);
+    text-align: center;
+    font-size: 165%;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header p {
+    color:crimson;
+}
+
+aside {
+    color:rgb(243, 179, 179);
+}
+
+header p span {
+    color:crimson;
+}
+
+.highlight {
+    color:rgb(247, 100, 100);
+    background-color:rgb(243, 179, 179);
+}
+
+.brand-color {
+    color:rgb(192, 55, 73);
+    background-color:rgb(243, 179, 179);
+}
+
+/* Site Navigation */
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: rgb(136, 10, 10);
+    padding: 10px 20px;
+    border: 3px solid rgb(228, 127, 127);
+    display: block;
+    border-bottom: none;
+}
+
+.site-nav a:hover {
+    background-color: rgb(228, 127, 127);
+}
+/*End of Site Navigation */
+
+
+h3 {
+    color:crimson;
+}
+p {
+    color: palevioletred;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+h2 {
+    color:rgb(192, 55, 73);
+    text-align: left;
+    font-size: 165%;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    color:crimson;
+}
+
+header p span {
+    color: crimson; 
+}
+
+.color {
+    background-color:rgb(243, 179, 179);
+}
+
+h1 {
+    color:rgb(192, 55, 73);
+    text-align: center;
+    font-size: 85%;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
